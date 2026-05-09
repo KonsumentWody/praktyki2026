@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Programisty</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="#about">O mnie</a>
+            <a href="#skills">Umiejętności</a>
+            <a href="#projects">Projekty</a>
+            <a href="#contact">Kontakt</a>
+            <button id="theme-toggle" onclick="toggleDarkMode()">🌓 Tryb</button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1 class="reveal">Cześć, jestem <span class="accent">Uczniem Technikum-Programistą</span></h1>
+        <p class="reveal">Buduję przyszłość linijka po linijce.</p>
+    </header>
+
+    <section id="about" class="reveal">
+        <h2>O mnie</h2>
+        <p>Pasjonuję się Pythonem, Javascriptem i nowymi technologiami. Uczę się, jak wykorzystywać AI do tworzenia
+            lepszego kodu.</p>
+    </section>
+
+    <section id="skills" class="reveal">
+        <h2>Umiejętności</h2>
+        <div class="grid">
+            <div class="card">Python</div>
+            <div class="card">HTML/CSS/JS</div>
+            <div class="card">Prompt Engineering</div>
+            <div class="card">Zarządzanie JSON</div>
+        </div>
+    </section>
+
+    <section id="interactive" class="reveal">
+        <h2>Interaktywne Narzędzia AI</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Licznik Kliknięć</h3>
+                <p id="counter-text">Kliknięć: 0</p>
+                <button class="btn" onclick="incrementCounter()">Dodaj +1</button>
+            </div>
+            <div class="card">
+                <h3>Motywacja AI</h3>
+                <p id="quote-display">Kliknij, aby wylosować cytat...</p>
+                <button class="btn" onclick="drawQuote()">Losuj cytat</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="reveal">
+        <h2>Kontakt</h2>
+        <form id="contact-form" onsubmit="validateForm(event)">
+            <input type="email" id="email" placeholder="Twój email" required>
+            <textarea id="message" placeholder="Twoja wiadomość" required></textarea>
+            <button type="submit" class="btn">Wyślij</button>
+            <p id="form-status"></p>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
