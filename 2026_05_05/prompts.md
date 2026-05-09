@@ -1,7 +1,3 @@
-# 🚀 10 Mistrzowskich Promptów do nauki kodowania z AI
-
-Te prompty zostały zaprojektowane tak, aby AI nie tylko pisało kod, ale tłumaczyło proces logiczny krok po kroku.
-
 ### 1. Budowanie fundamentów (Funkcja od zera)
 > "Działaj jako cierpliwy nauczyciel informatyki w liceum. Chcę napisać funkcję w Pythonie, która [OPISZ CO MA ROBIĆ, np. liczy pole trójkąta]. Zanim podasz kod, wyjaśnij w punktach logikę, jakiej powinniśmy użyć. Następnie napisz kod i skomentuj każdą linię tak, jakbyś tłumaczył to 16-latkowi."
 
